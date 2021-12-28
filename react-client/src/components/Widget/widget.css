@@ -1,0 +1,93 @@
+.bold {
+  font-weight: bold;
+}
+
+.widget-container {
+  /* taken from https://css-tricks.com/examples/GradientBorder/ */
+  border-bottom: 3px solid black;
+  background-image: linear-gradient(transparent, #000),
+    linear-gradient(transparent, #000);
+  background-size: 3px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+  width: 1440px;
+}
+
+.widget {
+  width: 30%;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.widget h1 {
+  margin-bottom: 10px;
+}
+
+.widget h2 {
+  margin: 10px 0 0 0;
+}
+
+.widget h3 {
+  font-weight: 400;
+}
+
+.widget--information {
+  width: 40%;
+}
+
+.inactive {
+  font-family: "Montserrat Subrayada", sans-serif;
+  color: #8b0000;
+  font-size: 100px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.inactive h1 {
+  justify-self: flex-end;
+  padding-right: 30px;
+}
+
+.canvas {
+  position: absolute;
+}
+
+.canvas-text {
+  font-weight: 800;
+  position: absolute;
+  transform: translate(-45%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+}
+
+.widget--information {
+  text-align: left;
+}
+
+.canvas-wrapper {
+  position: relative;
+  margin: 10px 0;
+}
+
+.information-section {
+  display: flex;
+  flex-direction: column;
+}
+
+span.bold {
+  margin-right: 10px;
+}
